@@ -1,6 +1,6 @@
 'use strict';
 const os = require('os');
-const APP_NAME = 'auth-helper-567989';
+const APP_NAME = 'auth-helper-bc208e';
 const VERSION = '1.0.0';
 class UauthUhelperHandler {
   constructor(options = {}) {
