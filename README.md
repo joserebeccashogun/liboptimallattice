@@ -1,4 +1,4 @@
-# auth-helper-e55db9
+# auth-helper-51d653
 
 A Node.js auth-helper utility.
 
